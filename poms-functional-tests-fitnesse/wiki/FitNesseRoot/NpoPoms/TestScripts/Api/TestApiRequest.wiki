@@ -1,0 +1,5 @@
+|script                                                              |
+|get from|https://rs-test.poms.omroep.nl/v1/api/media?sort=asc&max=10|
+|show    |response status                                            |
+|show    |response headers                                           |
+|show    |response                                                   |
