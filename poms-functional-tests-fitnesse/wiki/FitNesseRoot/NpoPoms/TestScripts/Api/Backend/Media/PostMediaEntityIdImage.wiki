@@ -16,6 +16,8 @@ Test
 </image>
 }}} }
 *!
-|script                                                                                     |
-|show |post           |${body}|to|${urlBackendApi}/media/media/${id}/image?owner=BROADCASTER|
-|check|response status|202                                                                  |
+
+|script                                                                             |
+|accept non-xml responses in subsequent requests                                    |
+|post |${body}        |to|${urlBackendApi}/media/media/${id}/image?owner=BROADCASTER|
+|check|response status|202                                                          |
